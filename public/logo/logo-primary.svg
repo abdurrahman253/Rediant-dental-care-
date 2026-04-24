@@ -1,0 +1,24 @@
+<svg width="360" height="96" viewBox="0 0 360 96" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Radiant Dental Care logo">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#1E66F5" />
+      <stop offset="1" stop-color="#1557d6" />
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(12,12)">
+    <!-- outlined tooth with subtle notch and star spark -->
+    <path d="M36 6 C31 6 24 10 20 18 C16 26 12 36 12 44 C12 59 29 66 36 62 C43 66 60 60 60 44 C60 36 56 27 52 18 C48 10 41 6 36 6 Z"
+      fill="none" stroke="url(#g)" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round" />
+
+    <!-- small notch/detail -->
+    <path d="M52 20 C50 18 46 18 44 20" stroke="url(#g)" stroke-width="1.6" stroke-linecap="round" />
+
+    <!-- sparkle / star -->
+    <path d="M10 2 L12 7 L17 7 L13 10 L14.5 15 L10 12 L5.5 15 L7 10 L3 7 L8 7 Z" transform="translate(12,6) scale(0.9)" fill="url(#g)" opacity="0.98" />
+
+    <!-- wordmark (updated to match provided image text) -->
+    <text x="96" y="36" font-family="Outfit, system-ui, -apple-system, 'Segoe UI', Roboto" font-weight="800" font-size="30" fill="#0B1220">Radiant</text>
+    <text x="96" y="60" font-family="Outfit, system-ui, -apple-system, 'Segoe UI', Roboto" font-weight="600" font-size="12" fill="#1557d6" letter-spacing="0.12em">DENTAL CARE</text>
+  </g>
+</svg>

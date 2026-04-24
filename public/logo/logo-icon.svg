@@ -1,0 +1,15 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="SmileCraft icon">
+  <defs>
+    <linearGradient id="g2" x1="0" x2="1">
+      <stop offset="0" stop-color="#1E66F5" />
+      <stop offset="1" stop-color="#1557d6" />
+    </linearGradient>
+  </defs>
+
+  <rect width="64" height="64" rx="12" fill="#EEF4FF" />
+  <path d="M32 12 C29 12 24 15 21 20 C18 25 16 32 16 36 C16 46 26 50 32 46 C38 50 48 46 48 36 C48 32 46 25 43 20 C40 15 35 12 32 12 Z"
+    fill="none" stroke="url(#g2)" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" />
+
+  <!-- small sparkle -->
+  <path d="M45 10 L47 14 L51 15 L48 17 L49 21 L45 19 L41 21 L42 17 L39 15 L43 14 Z" fill="url(#g2)" opacity="0.95" />
+</svg>
