@@ -7,6 +7,7 @@ export const services = [
     shortDesc: "Advanced fluoride treatments and sealants to fortify your enamel and keep your smile cavity-free.",
     heroImage: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1400&q=80",
     gradient: "from-teal-500 to-cyan-400",
+    gradientStyle: "linear-gradient(135deg, #14b8a6, #22d3ee)",
     glowColor: "rgba(20,184,166,0.3)",
     about: "Cavity protection is the foundation of preventive dentistry. Our comprehensive approach combines professional fluoride treatments, dental sealants, and personalized oral hygiene plans to create an impenetrable shield for your teeth. We use only biocompatible, BPA-free materials approved by the American Dental Association.",
     benefits: [
@@ -32,6 +33,7 @@ export const services = [
     shortDesc: "Permanent, natural-looking tooth replacements crafted from titanium — your closest option to real teeth.",
     heroImage: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=1400&q=80",
     gradient: "from-blue-500 to-indigo-400",
+    gradientStyle: "linear-gradient(135deg, #3b82f6, #818cf8)",
     glowColor: "rgba(99,102,241,0.3)",
     about: "Dental implants are the gold standard for tooth replacement. Our board-certified implantologists use 3D imaging and computer-guided surgery to place titanium posts that integrate seamlessly with your jawbone. The result is a restoration so natural, even your dentist will have to look twice.",
     benefits: [
@@ -57,6 +59,7 @@ export const services = [
     shortDesc: "Transform your smile with porcelain veneers, whitening, and bonding tailored to your facial aesthetics.",
     heroImage: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=1400&q=80",
     gradient: "from-rose-400 to-pink-500",
+    gradientStyle: "linear-gradient(135deg, #fb7185, #ec4899)",
     glowColor: "rgba(244,63,94,0.3)",
     about: "Your smile is your signature. Our cosmetic dentistry services blend artistry with precision science to create smiles that feel as good as they look. Whether you want a subtle enhancement or a complete smile makeover, our cosmetic team creates bespoke treatment plans aligned with your facial proportions, skin tone, and personal style.",
     benefits: [
@@ -82,6 +85,7 @@ export const services = [
     shortDesc: "Early diagnosis and advanced gum therapy to rescue your teeth and protect your systemic health.",
     heroImage: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1400&q=80",
     gradient: "from-emerald-500 to-teal-400",
+    gradientStyle: "linear-gradient(135deg, #10b981, #2dd4bf)",
     glowColor: "rgba(16,185,129,0.3)",
     about: "Periodontal disease is the leading cause of tooth loss in adults, yet it's highly preventable and treatable. Our periodontists use laser-assisted therapy, scaling, and root planing techniques to eliminate harmful bacteria below the gumline, restore gum health, and halt disease progression before it threatens your overall wellbeing.",
     benefits: [
@@ -107,6 +111,7 @@ export const services = [
     shortDesc: "State-of-the-art digital X-rays delivering 90% less radiation for precise diagnosis and treatment planning.",
     heroImage: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1400&q=80",
     gradient: "from-violet-500 to-purple-400",
+    gradientStyle: "linear-gradient(135deg, #8b5cf6, #c084fc)",
     glowColor: "rgba(139,92,246,0.3)",
     about: "Modern dental radiography goes far beyond traditional X-rays. We offer digital panoramic imaging, CBCT 3D cone beam scans, and intraoral sensors that produce crystal-clear images with a fraction of traditional radiation exposure. Our imaging suite gives our dentists a complete three-dimensional view for unparalleled diagnostic accuracy.",
     benefits: [
@@ -132,6 +137,7 @@ export const services = [
     shortDesc: "Durable, tooth-colored fillings, inlays, and onlays that restore strength and beauty in a single visit.",
     heroImage: "https://images.unsplash.com/photo-1626954079673-f3c3d9b9e13f?w=1400&q=80",
     gradient: "from-amber-400 to-orange-400",
+    gradientStyle: "linear-gradient(135deg, #fbbf24, #fb923c)",
     glowColor: "rgba(251,146,60,0.3)",
     about: "A damaged tooth doesn't have to mean a compromised smile. Our restorations use CEREC same-day ceramic technology to craft inlays, onlays, and crowns right in our clinic — no temporaries, no second appointments. All materials are metal-free, biocompatible, and shade-matched to your natural teeth for an invisible restoration.",
     benefits: [
@@ -157,6 +163,7 @@ export const services = [
     shortDesc: "Sleep through your procedure with our calming sedation options — anxiety-free dental care for everyone.",
     heroImage: "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=1400&q=80",
     gradient: "from-sky-400 to-blue-500",
+    gradientStyle: "linear-gradient(135deg, #38bdf8, #3b82f6)",
     glowColor: "rgba(56,189,248,0.3)",
     about: "Dental anxiety affects millions of people and prevents them from receiving the care they need. Our sedation dentistry program offers a spectrum of options — from mild nitrous oxide to IV conscious sedation — so every patient, regardless of their anxiety level, can receive comprehensive dental care in a relaxed, comfortable state.",
     benefits: [
@@ -182,6 +189,7 @@ export const services = [
     shortDesc: "Precision-milled ceramic crowns and bridges that restore full function and a seamless, radiant smile.",
     heroImage: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=1400&q=80",
     gradient: "from-fuchsia-500 to-pink-400",
+    gradientStyle: "linear-gradient(135deg, #d946ef, #f472b6)",
     glowColor: "rgba(232,121,249,0.3)",
     about: "Our crowns and bridges are engineered using CAD/CAM technology for an exact, comfortable fit every time. We use premium zirconia and lithium disilicate ceramics that mimic the light-reflecting properties of natural teeth. Whether you need to cap a damaged tooth or replace one or more missing teeth, our restorations are virtually indistinguishable from nature.",
     benefits: [

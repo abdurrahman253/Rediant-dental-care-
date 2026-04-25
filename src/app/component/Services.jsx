@@ -70,7 +70,7 @@ function ServiceCard({ service, index }) {
       variants={cardVariants}
       whileHover={{ y: -8, scale: 1.02 }}
       transition={{ duration: 0.3, ease: "easeOut" }}
-      className="group relative"
+      className="relative group"
     >
       {/* Gradient border glow on hover */}
       <div
@@ -87,7 +87,7 @@ function ServiceCard({ service, index }) {
         
         {/* Subtle background gradient on hover */}
         <div
-          className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"
+          className="absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100 rounded-2xl"
           style={{
             background: `radial-gradient(circle at top right, ${service.glowColor.replace("0.3", "0.06")}, transparent 60%)`,
           }}
@@ -101,13 +101,14 @@ function ServiceCard({ service, index }) {
         {/* Icon */}
         <div className="relative mb-5">
           <div
-            className={`w-14 h-14 rounded-xl bg-gradient-to-br ${service.gradient} flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow duration-300`}
+            className="flex items-center justify-center transition-shadow duration-300 shadow-lg w-14 h-14 rounded-xl group-hover:shadow-xl"
+           style={{ background: service.gradientStyle }}
           >
             <motion.div
               whileHover={{ rotate: [0, -10, 10, 0] }}
               transition={{ duration: 0.4 }}
             >
-              <IconComponent className="w-7 h-7 text-white" strokeWidth={1.75} />
+              <IconComponent className="text-white w-7 h-7" strokeWidth={1.75} />
             </motion.div>
           </div>
           {/* Floating index number */}
@@ -117,11 +118,11 @@ function ServiceCard({ service, index }) {
         </div>
 
         {/* Content */}
-        <div className="relative flex-1 flex flex-col">
+        <div className="relative flex flex-col flex-1">
           <h3 className="text-[1.05rem] font-bold text-slate-800 mb-2.5 tracking-tight group-hover:text-teal-700 transition-colors duration-300">
             {service.title}
           </h3>
-          <p className="text-sm text-slate-500 leading-relaxed flex-1 mb-5">
+          <p className="flex-1 mb-5 text-sm leading-relaxed text-slate-500">
             {service.shortDesc}
           </p>
 
@@ -157,7 +158,7 @@ export default function ServicesSection() {
     <section
       ref={sectionRef}
       id="services"
-      className="relative py-28 overflow-hidden"
+      className="relative overflow-hidden py-28"
       style={{
         background:
           "linear-gradient(180deg, #f0fdfa 0%, #f8fafc 50%, #f0f9ff 100%)",
@@ -165,7 +166,7 @@ export default function ServicesSection() {
     >
       {/* Decorative blobs */}
       <div
-        className="absolute top-0 left-1/4 w-96 h-96 rounded-full opacity-30 pointer-events-none"
+        className="absolute top-0 rounded-full pointer-events-none left-1/4 w-96 h-96 opacity-30"
         style={{
           background:
             "radial-gradient(circle, rgba(20,184,166,0.18) 0%, transparent 70%)",
@@ -173,7 +174,7 @@ export default function ServicesSection() {
         }}
       />
       <div
-        className="absolute bottom-16 right-0 w-80 h-80 rounded-full opacity-20 pointer-events-none"
+        className="absolute right-0 rounded-full pointer-events-none bottom-16 w-80 h-80 opacity-20"
         style={{
           background:
             "radial-gradient(circle, rgba(56,189,248,0.25) 0%, transparent 70%)",
@@ -181,7 +182,7 @@ export default function ServicesSection() {
         }}
       />
       <div
-        className="absolute top-1/2 left-0 w-64 h-64 rounded-full opacity-15 pointer-events-none"
+        className="absolute left-0 w-64 h-64 rounded-full pointer-events-none top-1/2 opacity-15"
         style={{
           background:
             "radial-gradient(circle, rgba(139,92,246,0.2) 0%, transparent 70%)",
@@ -198,14 +199,14 @@ export default function ServicesSection() {
         }}
       />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         
         {/* ── Section Header ── */}
         <motion.div
           variants={headerVariants}
           initial="hidden"
           animate={isInView ? "show" : "hidden"}
-          className="text-center mb-16 lg:mb-20"
+          className="mb-16 text-center lg:mb-20"
         >
           {/* Badge */}
           <div className="inline-flex items-center gap-2 mb-5">
@@ -218,7 +219,7 @@ export default function ServicesSection() {
 
           {/* Title */}
           <h2
-            className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight mb-5"
+            className="mb-5 text-4xl font-black tracking-tight sm:text-5xl lg:text-6xl"
             style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
           >
             <span className="text-slate-900">Our Premium </span>
@@ -234,21 +235,21 @@ export default function ServicesSection() {
           </h2>
 
           {/* Subtitle */}
-          <p className="text-slate-500 text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="max-w-2xl mx-auto text-lg leading-relaxed text-slate-500">
             World-class dental care delivered with precision, compassion, and the
             most advanced technology available — tailored entirely to you.
           </p>
 
           {/* Decorative line */}
           <motion.div
-            className="mt-8 flex items-center justify-center gap-3"
+            className="flex items-center justify-center gap-3 mt-8"
             initial={{ opacity: 0, scaleX: 0 }}
             animate={isInView ? { opacity: 1, scaleX: 1 } : {}}
             transition={{ delay: 0.5, duration: 0.8, ease: "easeOut" }}
           >
-            <div className="h-px w-24 bg-gradient-to-r from-transparent to-teal-400" />
-            <div className="w-2 h-2 rounded-full bg-teal-400" />
-            <div className="h-px w-24 bg-gradient-to-l from-transparent to-teal-400" />
+            <div className="w-24 h-px bg-gradient-to-r from-transparent to-teal-400" />
+            <div className="w-2 h-2 bg-teal-400 rounded-full" />
+            <div className="w-24 h-px bg-gradient-to-l from-transparent to-teal-400" />
           </motion.div>
         </motion.div>
 
@@ -257,7 +258,7 @@ export default function ServicesSection() {
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "show" : "hidden"}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 lg:gap-6"
+          className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:gap-6"
         >
           {services.map((service, index) => (
             <ServiceCard key={service.id} service={service} index={index} />
@@ -283,7 +284,7 @@ export default function ServicesSection() {
             Not sure which service is right for you?{" "}
             <Link
               href="/appointment"
-              className="text-teal-600 font-medium hover:text-teal-700 underline underline-offset-2"
+              className="font-medium text-teal-600 underline hover:text-teal-700 underline-offset-2"
             >
               Book a free consultation
             </Link>
